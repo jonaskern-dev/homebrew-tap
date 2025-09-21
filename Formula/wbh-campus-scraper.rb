@@ -3,8 +3,8 @@ class WbhCampusScraper < Formula
 
   desc "Extract and process study program data from WBH Online Campus HTML exports"
   homepage "https://github.com/jonaskern-dev/wbh-campus-scraper"
-  url "https://github.com/jonaskern-dev/wbh-campus-scraper/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "dbc31443904c5eee075c748b75c309c2596c9c82f83281c3380dffa0a90d921a"
+  url "https://github.com/jonaskern-dev/wbh-campus-scraper/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "0462824c75e91bfd4de494296673779430b0d0d650fc8c188fb010617d29bf4a"
   license "MIT"
 
   depends_on "python@3.11"
