@@ -10,7 +10,7 @@ cask "scan-organizer" do
   depends_on macos: ">= :sonoma"
   depends_on formula: "ollama"
 
-  app "Scan Organizer.app"
+  app "ScanOrganizer.app", target: "Scan Organizer.app"
 
   postflight do
     # Start Ollama service
