@@ -13,6 +13,14 @@ cask "scan-organizer" do
   app "ScanOrganizer.app", target: "Scan Organizer.app"
 
   postflight do
+    # Remove quarantine and ad-hoc sign (until app is properly signed)
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/Scan Organizer.app"],
+                   print_stderr: false
+    system_command "codesign",
+                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/Scan Organizer.app"],
+                   print_stderr: false
+
     # Start Ollama service
     system_command "/usr/local/bin/brew",
                    args: ["services", "start", "ollama"],
