@@ -1,6 +1,6 @@
 cask "scan-organizer" do
-  version "1.1.2"
-  sha256 "58da9fdd46ffd2c093d30897721083e4262795e9a33bf1880ef8bfc9a58a708a"
+  version "1.1.3"
+  sha256 "91fb37455cb72db3b6a0fe7773440cedafc53cd7e7f31e2eedf28bacd4f17773"
 
   url "https://github.com/jonaskern-dev/scan-organizer/releases/download/v#{version}/ScanOrganizer-#{version}.zip"
   name "Scan Organizer"
