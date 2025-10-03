@@ -22,9 +22,12 @@ cask "scan-organizer" do
                    print_stderr: false
 
     # Start Ollama service
-    system_command "/usr/local/bin/brew",
-                   args: ["services", "start", "ollama"],
-                   print_stderr: false
+    brew_path = which("brew")
+    if brew_path
+      system_command brew_path,
+                     args: ["services", "start", "ollama"],
+                     print_stderr: false
+    end
 
     # Install Finder Quick Action
     service_name = "Process with Scan Organizer"
