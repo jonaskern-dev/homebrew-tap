@@ -1,19 +1,19 @@
 class MediaManagerDev < Formula
   desc "Media automation platform (development version)"
   homepage "https://github.com/jonaskern-dev/media-manager"
-  version "0.2.1-dev"
+  version "0.2.2-dev"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.1-dev/media-manager-darwin-arm64"
-      sha256 "8f8b58a632217b651ae731d2445ff265229074a38910ac99279aabb8d64ae1c5"
+      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.2-dev/media-manager-darwin-arm64"
+      sha256 "e132eba8804ee867b8a907d22a24cc8765dbc7b0e185e7ec3f20751bbbd09a84"
       def install
         bin.install "media-manager-darwin-arm64" => "media-manager"
       end
     else
-      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.1-dev/media-manager-darwin-amd64"
-      sha256 "1a8fd31132a54e2f6965fe3e9679c26d6920984358b64881363e6392d3a21574"
+      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.2-dev/media-manager-darwin-amd64"
+      sha256 "67a195911701af344083f15eb28ae4f1a7bd35237b6ac036dc2e22a65cf8fc91"
       def install
         bin.install "media-manager-darwin-amd64" => "media-manager"
       end
@@ -22,14 +22,14 @@ class MediaManagerDev < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.1-dev/media-manager-linux-arm64"
-      sha256 "d76b4d5c944ee4842b2af6c114b4b4bb17ea819673520234b32f2c37baf40797"
+      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.2-dev/media-manager-linux-arm64"
+      sha256 "d7e1c50a2a967712c592ce5bde01c93cd5ecb7f3cad4a7fcf8dc78c1d10d1f12"
       def install
         bin.install "media-manager-linux-arm64" => "media-manager"
       end
     else
-      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.1-dev/media-manager-linux-amd64"
-      sha256 "439271572457198fe648cb6d90d0c9c9152e1bf246742a521d6c429cec7ea783"
+      url "https://github.com/jonaskern-dev/media-manager/releases/download/v0.2.2-dev/media-manager-linux-amd64"
+      sha256 "a45991244c6e9b473ca91cae0acda0cb2549851dc969a9ad12652839a93a11ac"
       def install
         bin.install "media-manager-linux-amd64" => "media-manager"
       end
